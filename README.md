@@ -1,7 +1,8 @@
 ﻿## Final Project.  
 Medical scheduling system  
+Master  
 
-Master  ### PROGRESS:  
+### PROGRESS:  
 
 ### (From the assignment requirement doc **Bold are bonus**)  
 
@@ -14,13 +15,13 @@ Master  ### PROGRESS:
 3.(4)Add 2-Factor authentication to your web application.  
 		IN PROGRESS  
 	
-### 4.(4)Your project should ideally use two virtual machines. One is a build and test server runningJenkins and another is a production server.  
+**4.(4)Your project should ideally use two virtual machines. One is a build and test server runningJenkins and another is a production server.**  
 		IN PROGRESS  
 
-### 5.(4)Configure a webhook on the master branch of your webdesignproject repository so that when-ever a commit is made to the master branch, Jenkins fetches the latest code from the repositoryand deploys it to the production server  
+**5.(4)Configure a webhook on the master branch of your webdesignproject repository so that when-ever a commit is made to the master branch, Jenkins fetches the latest code from the repositoryand deploys it to the production server.**  
 		IN PROGRESS  
 
-### 6.(4)Enhance your continuous integration and testing pipeline so that the Jenkins server runs unittests on your project.  
+**6.(4)Enhance your continuous integration and testing pipeline so that the Jenkins server runs unittests on your project.**  
 		IN PROGRESS  
 
 7.(4)Make your deployed application accessible using one of the following: ngrok, pagekite, argo(or similar technology)  
