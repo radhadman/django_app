@@ -15,8 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from two_factor.urls import urlpatterns as tf_urls
+from django.conf.urls import url
+from two_factor.gateways.twilio.urls import urlpatterns as tf_twilio_urls
+from two_factor.admin import AdminSiteOTPRequired
+
+admin.site.__class__ = AdminSiteOTPRequired
 
 urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'', include(tf_twilio_urls)),
+    url(r'', include(tf_urls)),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]

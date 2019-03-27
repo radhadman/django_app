@@ -2,6 +2,7 @@ import datetime
 
 from django.db import models
 from django.utils import timezone
+from formtools.wizard.views import WizardView
 # Create your models here.
 
 class Question(models.Model):
