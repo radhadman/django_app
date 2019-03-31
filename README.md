@@ -15,10 +15,12 @@ Medical scheduling system
 		IN PROGRESS  
 	
 ### 4.(4)Your project should ideally use two virtual machines. One is a build and test server runningJenkins and another is a production server.  
-		IN PROGRESS  
+		50% DONE - using phyisical machines  
+		Jekinis Server @ - 70.78.103.158:8080  
 
 ### 5.(4)Configure a webhook on the master branch of your webdesignproject repository so that when-ever a commit is made to the master branch, Jenkins fetches the latest code from the repositoryand deploys it to the production server  
-		IN PROGRESS  
+		WEB HOOKS 100% DONE  
+		50% DONE - fetch and deploy  
 
 ### 6.(4)Enhance your continuous integration and testing pipeline so that the Jenkins server runs unittests on your project.  
 		IN PROGRESS  
