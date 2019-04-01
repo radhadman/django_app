@@ -23,10 +23,10 @@ Medical scheduling system
 
 ### 5.(4)Configure a webhook on the master branch of your webdesignproject repository so that when-ever a commit is made to the master branch, Jenkins fetches the latest code from the repositoryand deploys it to the production server  
 		WEB HOOKS 100% DONE  
-		60% DONE - fetch and deploy  
+		80% DONE - FETCH AND BUILD DONE WORKING ON DEPLOY  
 
 ### 6.(4)Enhance your continuous integration and testing pipeline so that the Jenkins server runs unittests on your project.  
-		IN PROGRESS  
+		20% DONE - Researching implementing testing.  
 
 7.(4)Make your deployed application accessible using one of the following: ngrok, pagekite, argo(or similar technology)  
 		IN PROGRESS  
