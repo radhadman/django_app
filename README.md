@@ -17,18 +17,18 @@ Medical scheduling system
 	
 ##### 4.(4)Your project should ideally use two virtual machines. One is a build and test server runningJenkins and another is a production server.  
 
-		60% DONE - using phyisical machines  
-		Jekinis Server @ - 70.78.103.158:8080  
-		    Login: CisProject
-		    Password: 1Get6dog!
-		Production Django Server @ - 96.48.0.114:8000  
+		Using phyisical machines 100% DONE - (Andrew) 
+			Jekinis Server @ - 70.78.103.158:8080  
+		    		Login: CisProject
+		    		Password: 1Get6dog!
+			Production Django Server @ - 96.48.0.114:8000  
 
 
 ##### 5.(4)Configure a webhook on the master branch of your webdesignproject repository so that when-ever a commit is made to the master branch, Jenkins fetches the latest code from the repositoryand deploys it to the production server  
 
 		WEB HOOKS 100% DONE - (Andrew)
 		BULDING 100% DONE - (Andrew)
-		DEPLOYING TO PRODUCTION SERVER 50% DONE 
+		DEPLOYING TO PRODUCTION SERVER 100% DONE - (Andrew) 
 
 ##### 6.(4)Enhance your continuous integration and testing pipeline so that the Jenkins server runs unit tests on your project.  
 
