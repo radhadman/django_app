@@ -1,4 +1,4 @@
-"""doctor_appointment URL Configuration
+"""mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -14,21 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
-# Two factor
-from django.conf.urls import url
+from django.urls import path, include
+from django.views.generic.base import TemplateView
 from two_factor.urls import urlpatterns as tf_urls
+from django.conf.urls import url
 from two_factor.gateways.twilio.urls import urlpatterns as tf_twilio_urls
-from django.contrib import admin
-from two_factor.admin import AdminSiteOTPRequired
-
-admin.site.__class__ = AdminSiteOTPRequired
 
 urlpatterns = [
-# Two factor
-    url(r'^admin/', admin.site.urls),
     url(r'', include(tf_twilio_urls)),
     url(r'', include(tf_urls)),
 
     path('admin/', admin.site.urls),
+    path('accounts/', include('accounts.urls')),
+    path('accounts/', include('django.contrib.auth.urls')), 
+    path('', TemplateView.as_view(template_name='home.html'), name='home'), 
+    path('', TemplateView.as_view(template_name='home.html'), name='home'),
 ]
