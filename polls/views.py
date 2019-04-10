@@ -3,9 +3,10 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
+from django.contrib.auth.decorator import login_required
 
 from .models import Choice, Question
-
+@login_required
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_question_list'
@@ -18,7 +19,7 @@ class IndexView(generic.ListView):
         return Question.objects.filter(
         pub_date__lte=timezone.now()
         ).order_by('-pub_date')[:5]
-
+@login_required
 class DetailView(generic.DetailView):
     model = Question
     template_name = 'polls/detail.html'
@@ -27,7 +28,7 @@ class DetailView(generic.DetailView):
         Excludes any questions that aren't published yet.
         """
         return Question.objects.filter(pub_date__lte=timezone.now())
-
+@login_required
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
