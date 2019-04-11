@@ -38,8 +38,7 @@ Medical scheduling system
 		
 		100% DONE - (ANDREW)
 			Start file can be found inside project, will update addresses as they change.
-			https://cd84388d.ngrok.io
-            http://cd84388d.ngrok.io
+			http://01720553.ngrok.io/admin
 
 ##### 8.(12)Your progress along the way is just as important as the final product. Ensure that you areregularly commmitting your changes to the repository. If you have difficulties coordinatingyour changes, I recommend using different branches in the same repository. Avoid creatingmultiple new repositories. Keep the README.md file in the master branch constantly updatedabout who has done work on what aspects of the application.  
 
