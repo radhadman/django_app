@@ -13,7 +13,9 @@ Medical scheduling system
 
 ##### 3.(4)Add 2-Factor authentication to your web application.  
 
-		IN PROGRESS - (Cuiyu)
+		Two-factor authentication 100% DONE - (Cuiyu)
+		Using the tutorial from the notes.
+		Enabling use Google Authentication to scan QR code then generate token to do the two-factor authentication.
 	
 ##### 4.(4)Your project should ideally use two virtual machines. One is a build and test server runningJenkins and another is a production server.  
 
@@ -60,6 +62,9 @@ Medical scheduling system
     https://raspberrypituts.com/django-raspberry-pi-tutorial/
     https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment
     https://ngrok.com/docs
+    https://django-two-factor-auth.readthedocs.io/en/stable/
+    https://wsvincent.com/django-user-authentication-tutorial-login-and-logout/
+    https://simpleisbetterthancomplex.com/tutorial/2017/02/18/how-to-create-user-sign-up-view.html#sign-up-with-confirmation-mail
     
     Followed Tutorials 1:1 (As per assignment):
     
