@@ -1,0 +1,3 @@
+#!/bin/bash
+./ngrok authtoken YeruYdLyadS7EgsfZ5Ca_788Txw2cVs4Lim7BDxJVL
+./ngrok http 8000
