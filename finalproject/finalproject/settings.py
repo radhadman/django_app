@@ -25,7 +25,7 @@ SECRET_KEY = '4l9=*_a0=jzcu86(ta)vneuu6jk266$x#1cdi(q(t^2r9yn)-s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'django_otp',
+    'django_otp.plugins.otp_static',
+    'django_otp.plugins.otp_totp',
+    'two_factor',
+	'otp_yubikey',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +53,8 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+	'django_otp.middleware.OTPMiddleware',
+	'two_factor.middleware.threadlocals.ThreadLocals',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -129,4 +136,9 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'blog_home'
 
-LOGIN_URL = 'login'
+LOGIN_URL = 'two_factor:login'
+
+TWO_FACTOR_PATCH_ADMIN = True
+TWO_FACTOR_CALL_GATEWAY = None
+TWO_FACTOR_SMS_GATEWAY = None
+TWO_FACTOR_TOTP_DIGITS = 6
