@@ -1,5 +1,4 @@
 # Final Project.  
-Medical scheduling system  
 
 ## PROGRESS:  
 
@@ -7,8 +6,14 @@ Medical scheduling system
         
         We have created a blog post app in Django. The app has the following functionalities as features:
                 -Create, update, and delete posts (posts created by one user cannot be deleted or updated by another user)
+                
                 -Add and update a profile for a user (each profile includes information like a profile picture, email, and username)
+                
                 -Secure login and logout
+                    login credentials: 
+                                user: admin
+                                password: comp351
+                                
                 -This app was entirely designed following a Youtube Tutorial done by Corey Schafer. Here is the link for the video tutorial part 1:  https://www.youtube.com/watch?v=UmljXZIypDc
                                                                                                                     
                 
