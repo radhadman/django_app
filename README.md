@@ -4,8 +4,15 @@ Medical scheduling system
 ## PROGRESS:  
 
 ##### 1.(12)Adapt the django application you have been working on so far and change it so that it serves acompletely new purpose. For instance maybe it is an uber-stlye application, or a meeting roombooking system. Full marks will be awarded for creativity, originality, and depth.  
-
-		IN PROGRESS - (Haddon)
+        
+        We have created a blog post app in Django. The app has the following functionalities as features:
+                -Create, update, and delete posts (posts created by one user cannot be deleted or updated by another user)
+                -Add and update a profile for a user (each profile includes information like a profile picture, email, and username)
+                -Secure login and logout
+                -This app was entirely designed following a Youtube Tutorial done by Corey Schafer. Here is the link for the video tutorial part 1:  https://www.youtube.com/watch?v=UmljXZIypDc
+                                                                                                                    
+                
+                
 
 ##### 2.(4)Ensure that the application can be deployed automatically one one step using only the heattemplate and environment file. Use the following repository for ideas to get you started:https://cisgitlab.ufv.ca/201901COMP351AB1s00/heat-templates.  
 		As discussed with Carl we are going to use our own phisical servers making this imposible,
